@@ -4,7 +4,7 @@ var score;
 score = 300;
 console.log(score);
 
-var score2=300;
+var score2=200;
 console.log(score2);
 
 

@@ -8,6 +8,18 @@ bookAuthor = "J. R. R. Tolkien";
 
 console.log(bookTitle + " by " + bookAuthor);
 
+bookTitle = "Ek Samandar, Mere Andar";
+bookAuthor = "Sanjeev Joshi";
+
+console.log(bookTitle + " by " + bookAuthor);
+
+bookTitle = "Political History of Assam (1947-1971)  Volume 1";
+bookAuthor = "Dr. Rajen Saikia";
+
+console.log(bookTitle + " by " + bookAuthor);
+
+
+
 
 
 /* Further Adventures
