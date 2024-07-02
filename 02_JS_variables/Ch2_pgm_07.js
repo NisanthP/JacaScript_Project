@@ -5,6 +5,9 @@ var locationName = "The Dungeon of Doom";
 
 console.log(playerName + " is in " + locationName);
 
+var health = "good";
+console.log("Nitin health " + health + " and perfect");
+
 
 
 /* Further Adventures

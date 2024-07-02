@@ -5,10 +5,12 @@ score = 100;
 console.log("Your score was " + score);
 
 console.log("Great splat!!!");
-score = score + 50;
+score = score + 87;
 console.log("New score: " + score);
 
 console.log("Way to go!");
+
+console.log("congratulations");
 
 
 
