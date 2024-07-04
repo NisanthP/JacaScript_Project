@@ -3,12 +3,19 @@
 var book;
 
 book = {
-    title : "The Hobbit",
+    title : "There and Back Again",
     author : "J. R. R. Tolkien",
-    published : 1937
+    published : 1937,
+    
 };
+book2 = {
+    title2 : "Political History of Assa",
+    author2 : "	Dr. Rajen Saikia",
+    published2 : 1947
+}
 
 console.log(book);
+console.table(book2);
 
 
 

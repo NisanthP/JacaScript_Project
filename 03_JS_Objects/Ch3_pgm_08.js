@@ -10,6 +10,19 @@ book = {
 
 console.log(book.title);
 console.log(book.author);
+console.log(book.published);
+
+var book2;
+
+book2 = {
+  title     : "The Aim",
+	author    : "Nitin",
+	published : 1997
+};
+
+console.log(book2.title);
+console.log(book2.author);
+console.log(book2.published);
 
 
 

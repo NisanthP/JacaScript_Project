@@ -7,11 +7,27 @@ player1 = {
 	  score: 0
 };
 
+player2 = {
+	  name: "Virat",
+	  score: 0
+};
+
+var sum = 0; 
 console.log(player1.name + " has scored " + player1.score);
 
-player1.score = player1.score + 50;
+player1.score = player1.score + 55;
 
 console.log(player1.name + " has scored " + player1.score);
+
+console.log(player2.name + " has scored " + player2.score);
+
+player2.score = player2.score + 45;
+
+console.log(player2.name + " has scored " + player2.score);
+sum = player1.score + player2.score;
+
+console.log(player1.name + " and " + player2.name + " has scored "+ sum);
+
 
 
 

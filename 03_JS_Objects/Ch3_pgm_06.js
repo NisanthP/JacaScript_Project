@@ -9,7 +9,18 @@ book = {
     title : bookName
 };
 
+console.log(book);
 
+var book2;
+var book2Name;
+
+book2Name = "Maha Kavithai";
+
+book2 = {
+    title : book2Name
+};
+
+console.log(book2);
 
 /* Further Adventures
  *
