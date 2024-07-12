@@ -1,5 +1,5 @@
 // Location for a weather app
-const location = {
+const geolocation = {
     city : "San Francisco",
     state: "CA",
     country: "US",
@@ -9,9 +9,10 @@ const location = {
     elevation: 47.000
   };
 
-  console.log(location);
+  console.log(geolocation);
   
 
+  
 
   
   /* Further Adventures
