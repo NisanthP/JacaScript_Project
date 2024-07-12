@@ -2,10 +2,14 @@
 
 var msg;
 var showMessage;
+var names;
+
+names = "Manikandan";
 
 msg = "It's full of stars!";
 
 showMessage = function () {
+	console.log(message);
 	console.log(message);
 };
 
