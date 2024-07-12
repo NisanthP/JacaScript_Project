@@ -7,9 +7,18 @@ sayHello = function () {
 };
 
 sayHello();
-sayHello();
-sayHello();
+sayHello("Hello \n World!");
+sayHello("Hello \n World!");
 
+function hello(str){
+	for (let index = 0; index < str.length; index++) {
+		const element = str[index];
+		console.log(str[index]);
+		
+	}
+}
+
+hello(" Hello World");
 
 
 /* Further Adventures

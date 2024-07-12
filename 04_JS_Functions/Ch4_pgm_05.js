@@ -2,10 +2,23 @@
 
 var findTotal;
 var displayMenu;
+var number1 = 67;
+var number2 = 3;
 
 findTotal = function () {
 	result = number1 + number2;
+	console.log(result);
 };
+
+findTotal();
+
+// findTotal = function (number1,number2) {
+// 	result = number1 + number2;
+// 	console.log(result);
+// };
+
+// findTotal(67,3);
+
 
 displayMenu = function () {
 	console.log("Please choose an option:");
@@ -13,6 +26,8 @@ displayMenu = function () {
 	console.log("(2) Upload file");
 	console.log("(9) Quit");
 };
+
+displayMenu();
 
 
 

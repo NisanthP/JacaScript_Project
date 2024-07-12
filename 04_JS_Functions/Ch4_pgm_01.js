@@ -14,6 +14,22 @@ console.log("Actors: " + movie1.actors);
 console.log("Directors: " + movie1.directors);
 console.log("------------------------------");
 
+var blogPost;
+
+blogPost = {
+  title: "The Future of JavaScript",
+  author: "John Doe",
+  content: "JavaScript continues to evolve and grow in popularity. In this post, we'll explore the latest trends and features...",
+  tags: ["JavaScript", "Web Development", "Programming"]
+};
+
+console.log("Blog Post Information");
+console.log("------------------------------");
+console.log("Title: " + blogPost.title);
+console.log("Author: " + blogPost.author);
+console.log("Content: " + blogPost.content);
+console.log("Tags: " + blogPost.tags);
+console.log("------------------------------");
 
 
 /* Further Adventures

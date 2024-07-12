@@ -41,6 +41,41 @@ showMovieInfo();
 movie = movie3;
 showMovieInfo();
 
+var question1 = {
+    question: "What is the capital of France?",
+    options: ["Bordeaux", "Paris", "Brussels", "Marseille"],
+    correctAnswer: "Paris"
+};
+
+var question2 = {
+    question: "Who wrote 'To Kill a Mockingbird'?",
+    options: ["Harper Lee", "Mark Twain", "Ernest Hemingway", "John Steinbeck"],
+    correctAnswer: "Harper Lee"
+};
+
+var question3 = {
+    question: "Which planet is known as the Red Planet?",
+    options: ["Earth", "Mars", "Venus", "Jupiter"],
+    correctAnswer: "Mars"
+};
+
+function showQuestion() {
+    console.log("Question :" + que.question);
+    console.log("------------------------------");
+    console.log("Optons :" + que.options );
+    console.log("CorrectAnswer: " + que.correctAnswer);
+    console.log("------------------------------");
+}
+
+que = question1;
+showQuestion();
+
+que = question2;
+showQuestion();
+
+que = question3;
+showQuestion();
+
 
 
 /* Further Adventures
