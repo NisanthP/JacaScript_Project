@@ -2,16 +2,25 @@
 
 var getMessage;
 var response;
+var getMyMessage;
+
 
 getMessage = function () {
     return "I’m going on an adventure!";
+};
+
+getMyMessage = function () {
+    return "Exploring new horizons!";
 };
 
 response = getMessage();
 
 console.log(response);
 
+getMessage();
 
+response = getMyMessage();
+console.log(getMyMessage());
 
 /* Further Adventures
  *

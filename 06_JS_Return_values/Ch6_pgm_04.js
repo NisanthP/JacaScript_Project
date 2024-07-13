@@ -9,10 +9,21 @@ add = function (number1, number2) {
 };
 
 var sum = add(50, 23);
+console.log('The sum of 50 and 23 is ' + sum);
 
-console.log(sum);
+var sum2 = add(75, 39);
+console.log('The sum of 75 and 39 is ' + sum2);
 
+var sum3 = add(add(10, 20), 5); 
+console.log('The sum of 10, 20, and 5 is ' + sum3);
 
+var addThree = function (num1, num2, num3) {
+    var total = num1 + num2 + num3;
+    return total;
+};
+
+var sumThree = addThree(15, 30, 45);
+console.log('The sum of 15, 30, and 45 is ' + sumThree);
 
 /* Further Adventures
  *
