@@ -11,7 +11,32 @@ var line = function (lineLength) {
   console.log(line(40));
   console.log(line(50));
   
-  
+  for (var i = -20; i <= 60; i += 10) {
+    console.log("Length " + i + ": " + line(i));
+}
+
+var spaces = function (spaceLength) {
+  spaceLength = Math.max(0, spaceLength);
+  spaceLength = Math.min(40, spaceLength);
+  return " ".repeat(spaceLength);
+};
+
+console.log("Spaces 20: '" + spaces(20) + "'");
+console.log("Spaces 50: '" + spaces(50) + "'");
+
+var emptyBox = function (boxWidth) {
+  var topBottom = "=".repeat(boxWidth);
+  var middle = "=" + " ".repeat(boxWidth - 2) + "=";
+
+  console.log(topBottom);
+  for (var i = 0; i < 3; i++) {
+      console.log(middle);
+  }
+  console.log(topBottom);
+};
+
+emptyBox(12);
+
   
   /* Further Adventures
    *

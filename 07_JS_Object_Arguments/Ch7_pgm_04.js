@@ -18,13 +18,34 @@ showPoint = function (point) {
 
 point1 = { x : 2, y : 5 };
 
-point2 = move(point1, { x : 4, y : -2 });
+point2 = move(point1, { x : 6, y : -3 });
 
 showPoint(point1);
-console.log("Move 4 across and 2 down");
+console.log("Move 6 across and 3 down");
 showPoint(point2);
 
+var reflectX = function (point) {
+    return {
+        x: point.x,
+        y: -point.y
+    };
+};
 
+var reflectedPoint = reflectX(point1);
+console.log("Reflecting point (2, 5) in the x-axis:");
+showPoint(reflectedPoint);
+
+var rotate90 = function (point) {
+    return {
+        x: -point.y,
+        y: point.x
+    };
+};
+
+
+var rotatedPoint = rotate90(point1);
+console.log("Rotating point (2, 5) by 90 degrees anticlockwise:");
+showPoint(rotatedPoint);
 
 /* Further Adventures
  *

@@ -6,7 +6,14 @@ var charIndex = message.indexOf("M");
 
 console.log(message.substr(charIndex, 3));
 
+var indexOfGo = message.indexOf("go");
+console.log("Index of 'go':", indexOfGo);
 
+var indexOfChoose = message.indexOf("choose");
+console.log("Word 'choose':", message.substr(indexOfChoose, 6));
+
+var lastIndexOfOo = message.lastIndexOf("oo");
+console.log("Index of 'oo' in 'Moon':", lastIndexOfOo);
 
 /* Further Adventures
  *
