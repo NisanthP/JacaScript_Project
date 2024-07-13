@@ -4,6 +4,8 @@ var showPlayerInfo;
 var showPlayerName;
 var showPlayerHealth;
 var showPlayerPlace;
+var showLine;
+var showBlankLine;
 
 showPlayerName = function (playerName) {
     console.log(playerName);
@@ -34,7 +36,31 @@ showPlayerInfo = function (playerName, playerPlace, playerHealth) {
 showPlayerInfo("Kandra", "The Dungeon of Doom", 50);
 showPlayerInfo("Dax", "The Old Library", 40);
 
+showLine = function () {
+    console.log("----------------------------");
+};
 
+showBlankLine = function () {
+    console.log("");
+};
+
+
+showPlayerInfo = function (playerName, playerPlace, playerHealth) {
+    showBlankLine();
+
+    showPlayerName(playerName);
+
+    showLine();
+
+    showPlayerPlace(playerName, playerPlace);
+    showPlayerHealth(playerName, playerHealth);
+
+    showLine();
+    showBlankLine();
+};
+
+showPlayerInfo("Kandra", "The Dungeon of Doom", 50);
+showPlayerInfo("Dax", "The Old Library", 40);
 
 /* Further Adventures
  *

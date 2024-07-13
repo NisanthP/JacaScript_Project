@@ -9,8 +9,9 @@ names = "Manikandan";
 msg = "It's full of stars!";
 
 showMessage = function () {
-	console.log(message);
-	console.log(message);
+	console.log(msg);
+	console.log(names);
+	console.log(msg + " " + names);
 };
 
 showMessage();
