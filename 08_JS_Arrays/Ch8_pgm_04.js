@@ -1,12 +1,21 @@
 // Using a variable as an index
 
 var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-var dayInWeek = 4;
+var dayInWeek = 2;
 
 console.log( days[dayInWeek] );
 console.log( days[dayInWeek - 1] );
 
+var getDay = function(dayNumber) {
+    if (dayNumber >= 0 && dayNumber < days.length) {
+        return days[dayNumber];
+    } else {
+        return "Invalid day number";
+    }
+};
 
+console.log("The day for 1 is: " + getDay(1));
+console.log("The day for 6 is: " + getDay(6)); 
 
 /* Further Adventures
  *

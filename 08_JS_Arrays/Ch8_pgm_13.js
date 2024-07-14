@@ -101,9 +101,63 @@ var spacer = {
   
   showPlayerInfo(player1, "*");
   
+  player1.items.push("a rusty key");
+showPlayerInfo(player1, "*");
+
+player1.items.pop();
+showPlayerInfo(player1, "+");
   
-  
-  
+var getPlayerItemsNumbered = function (player) {
+  var itemsString = "Items:" + spacer.newLine();
+
+  player.items.forEach(function (item, index) {
+      itemsString += "   " + (index + 1) + ". " + item + spacer.newLine();
+  });
+
+  return itemsString;
+};
+
+var getPlayerInfoNumbered = function (player, character) {
+  var place = getPlayerPlace(player);
+  var health = getPlayerHealth(player);
+  var longest = Math.max(place.length, health.length) + 4;
+
+  var info = spacer.box(getPlayerName(player), longest, character);
+  info += spacer.wrap(place, longest, character);
+  info += spacer.newLine() + spacer.wrap(health, longest, character);
+  info += spacer.newLine() + spacer.line(longest, character);
+
+  info += spacer.newLine();
+  info += "  " + getPlayerItemsNumbered(player);
+  info += spacer.newLine();
+  info += spacer.line(longest, character);
+
+  info += spacer.newLine();
+
+  return info;
+};
+
+console.log("Numbered items:");
+console.log(getPlayerInfoNumbered(player1, "+"));
+
+var showItem = function (player, itemNumber) {
+  var itemIndex = itemNumber - 1;
+  if (itemIndex >= 0 && itemIndex < player.items.length) {
+      console.log("Item " + itemNumber + ": " + player.items[itemIndex]);
+  } else {
+      console.log("Item number out of range.");
+  }
+};
+
+showItem(player1, 2);
+
+var addItem = function (player, newItem) {
+  player.items.push(newItem);
+};
+
+addItem(player1, "a magical sword");
+showPlayerInfo(player1, "=");
+
   /* Further Adventures
    *
    * 1) Add and remove items at the prompt

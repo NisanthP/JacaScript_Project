@@ -24,8 +24,35 @@ var displayQuestion = function (questionAndAnswer) {
   };
   
   displayQuestion(question1);
+
+  var question2 = {
+    question : "Which planet is known as the Red Planet?",
+    answers : [
+        "Earth",
+        "Mars",
+        "Venus",
+        "Jupiter"
+    ],
+    correctAnswer : "Mars"
+};
+
+var question3 = {
+    question : "Who wrote 'To Kill a Mockingbird'?",
+    answers : [
+        "Harper Lee",
+        "J.K. Rowling",
+        "Ernest Hemingway",
+        "Stephen King"
+    ],
+    correctAnswer : "Harper Lee"
+};
   
-  
+var questions = [question1, question2, question3];
+
+questions.forEach(function(question, index) {
+  console.log("Question " + (index + 1) + ":");
+  displayQuestion(question);
+});
   
   /* Further Adventures
    *

@@ -15,7 +15,28 @@ showInfo = function (itemToShow) {
 
 items.forEach(showInfo);
 
+items.push("The Eiffel Tower");
+items.push("The Great Wall of China");
+items[5] = "Machu Picchu";
 
+items.forEach(showInfo);
+
+showInfo = function (itemToShow) {
+  console.log(itemToShow + " has " + itemToShow.length + " letters.");
+};
+
+items.forEach(showInfo);
+
+var totalLetters = function (array) {
+  var total = 0;
+  array.forEach(function (item) {
+      total += item.length;
+  });
+  return total;
+};
+
+var total = totalLetters(items);
+console.log("The total number of letters in the items array is " + total + "."); 
 
 /* Further Adventures
  *

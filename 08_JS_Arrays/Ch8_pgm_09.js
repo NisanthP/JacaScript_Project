@@ -13,6 +13,16 @@ showArguments = function (item, index, wholeArray) {
 
 players.forEach(showArguments);
 
+players.push("Zara", "Nico");
+players.forEach(showArguments);
+
+showArguments = function (item, index, wholeArray) {
+  console.log("Item: " + wholeArray[index]); // Displaying item using wholeArray and index
+  console.log("Index: " + index);
+  console.log("Array: " + wholeArray);
+};
+
+players.forEach(showArguments);
 
 /* Further Adventures
  *
