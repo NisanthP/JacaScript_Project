@@ -1,20 +1,46 @@
 // A Planet constructor
 
-var Planet = function (name, position, type) {
-    this.name = name;
-    this.position = position;
-    this.type = type;
-  
-    this.showPlanet = function () {
-        var info = this.name + ": planet " + this.position;
-        info +=  " - " + this.type;
+var buildPlanet = function (name, position, type) {
+    var planet = {};
+
+    planet.name = name;
+    planet.position = position;
+    planet.type = type;
+
+    planet.showPlanet = function () {
+        var info = planet.name;
+        info += ": planet " + planet.position;
+        info += " - " + planet.type;
         console.log(info);
     };
+
+    return planet;
 };
 
-var planet = new Planet( "Jupiter", 5, "Gas Giant" );
+var planets = [
+    buildPlanet("Jupiter", 5, "Gas Giant"),
+    buildPlanet("Neptune", 8, "Ice Giant"),
+    buildPlanet("Mercury", 1, "Terrestrial")
+];
 
-planet.showPlanet();
+var displayPlanets = function (planetsArray) {
+    planetsArray.forEach(function (planet, index) {
+        planet.showPlanet();
+        if (index < planetsArray.length - 1) {
+            console.log("---"); 
+        }
+    });
+};
+
+displayPlanets(planets);
+
+planets.push(
+    buildPlanet("Saturn", 6, "Gas Giant"),
+    buildPlanet("Venus", 2, "Terrestrial")
+);
+
+console.log("\nAfter adding two more planets:");
+displayPlanets(planets);
 
 
 

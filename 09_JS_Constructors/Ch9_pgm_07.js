@@ -26,8 +26,31 @@ question1.addOption("Bordeaux");
 question1.addOption("F");
 question1.addOption("Paris");
 question1.addOption("Brussels");
+question1.addOption("Nice"); 
 
 question1.showQuestion();
+
+var question2 = new QuizQuestion(
+    "Which planet is known as the Red Planet?",
+    "Mars"
+);
+
+question2.addOption("Jupiter");
+question2.addOption("Mars");
+question2.addOption("Saturn");
+question2.addOption("Uranus");
+question2.addOption("Neptune");
+
+var question3 = new QuizQuestion(
+    "What is the largest ocean on Earth?",
+    "Pacific Ocean"
+);
+
+question3.addOption("Atlantic Ocean");
+question3.addOption("Indian Ocean");
+question3.addOption("Arctic Ocean");
+question3.addOption("Pacific Ocean");
+question3.addOption("Southern Ocean");
 
 
 

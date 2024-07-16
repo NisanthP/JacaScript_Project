@@ -2,7 +2,7 @@
 
 var buildPlanet = function (name, position, type) {
     var planet = {};
-  
+
     planet.name = name;
     planet.position = position;
     planet.type = type;
@@ -13,7 +13,7 @@ var buildPlanet = function (name, position, type) {
         info += " - " + planet.type;
         console.log(info);
     };
-  
+
     return planet;
 };
 
@@ -24,6 +24,14 @@ var planet1 = buildPlanet(
 );
 
 planet1.showPlanet();
+
+var planet2 = buildPlanet(
+    "Mars",
+    4,
+    "Terrestrial"
+);
+
+planet2.showPlanet();
 
 
 
