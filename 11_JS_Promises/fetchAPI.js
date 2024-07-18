@@ -4,11 +4,11 @@
 // In addition to that let us see demonstrate use case of promises in accessing network resources 
 // using the fetch API.
 
-const url = 'https://restcountries.com/v2/all' // countries api
+const url = 'https://restcountries.com/v2/all'; 
 fetch(url)
-  .then(response => response.json()) // accessing the API data as JSON
+  .then(response => response.json()) 
   .then(data => {
-    // getting the data
-    console.log(data)
+   
+    console.log(data); 
   })
-  .catch(error => console.error(error)) // handling error if something wrong happens
+  .catch(error => console.error(error)); // handling error if something wrong happens

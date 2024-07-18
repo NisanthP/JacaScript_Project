@@ -1,20 +1,20 @@
 // Callbacks
 
 const doSomething = callback => {
-    setTimeout(() => {
-      const skills = ['HTML', 'CSS', 'JS']
-      callback('It did not go well', skills)
-    }, 2000)
+  setTimeout(() => {
+    const skills = ['HTML', 'CSS', 'JS'];
+    callback('It did not go well', skills);
+  }, 2000);//2000 playes main rolls
+};
+
+const callback = (err, result) => {
+  if (err) {
+    return console.log(err);
   }
-  
-  const callback = (err, result) => {
-    if (err) {
-      return console.log(err)
-    }
-    return console.log(result)
-  }
-  
-  doSomething(callback);
+  return console.log(result);
+};
+
+doSomething(callback);
 
 
 // after 2 seconds it will print
