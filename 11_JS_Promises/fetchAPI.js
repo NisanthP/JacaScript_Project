@@ -11,4 +11,6 @@ fetch(url)
    
     console.log(data); 
   })
-  .catch(error => console.error(error)); // handling error if something wrong happens
+  .catch(error => console.error(error)); 
+  
+  // handling error if something wrong happens
