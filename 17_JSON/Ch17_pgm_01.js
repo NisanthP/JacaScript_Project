@@ -104,7 +104,35 @@ const txt = `{
     }
 }
 `
+const skillsJSON = JSON.stringify(skills);
+console.log(skillsJSON);
 
+const ageJSON = JSON.stringify(age);
+console.log(ageJSON);
+
+const isMarriedJSON = JSON.stringify(isMarried);
+console.log(isMarriedJSON);
+
+const studentJSON = JSON.stringify(student);
+console.log(studentJSON);
+
+const studentFilteredJSON = JSON.stringify(student, ['firstName', 'lastName', 'skills']);
+console.log(studentFilteredJSON);
+
+const usersObj = JSON.parse(txt);
+console.log(usersObj);
+
+let maxSkills = 0;
+let mostSkilledUser = '';
+
+for (const user in usersObj) {
+  if (usersObj[user].skills.length > maxSkills) {
+    maxSkills = usersObj[user].skills.length;
+    mostSkilledUser = user;
+  }
+}
+
+console.log(mostSkilledUser);
 
 // Level 1
 
